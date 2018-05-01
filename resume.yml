@@ -1,0 +1,54 @@
+education:
+    - school: University of Michigan
+      location: Ann Arbor, MI
+      degree: Masters in Computer Science
+      gpa: 3.67
+      start: September, 2014
+      end: May, 2015
+    - school: University of Michigan
+      location: Ann Arbor, MI
+      degree: BSE in Computer Engineering
+      gpa: 3.91
+      start: September, 2011
+      end: May, 2014
+      #     - school: Orchard Lake St. Mary's
+      #       location: Orchard Lake, MI
+      #       start: August, 2007
+      #       end: May, 2011
+      #       gpa: 4.17 / 4.3
+      #       rank: 2 / 117
+
+projects:
+    - name: Example
+experience:
+    - name: Counsyl Inc.
+      role: Automation Engineer
+      start: August 2015
+      end: Present Day
+      location: S. San Francisco, CA
+      description:
+        - Run a highly decoupled micro-service based architecture to coordinate an automated lab
+        - Optimize scheduling algorithms to improve the run time of biological processes
+        - Work with several interdisciplinary teams to utilize our automation stack to create new protocols 
+        - Integrate various biological instruments into our automated work-cell
+        - Guide team to improve overall architecture and workflow
+        - Utilize platform tools to enhance our development and deployment protocols with Puppet
+    - name: Microsoft
+      role: Software Engineering Intern
+      start: June 2014
+      end: August 2014
+      location: Bellevue, WA
+      description:
+        - Created a list of web-spam judgments from a set of query-url pairs, resulting in approximately 32,000 judgments
+        - Accumulated an extensive feature set from a list of query-url pairs, utilizing existing resources that were part of an elaborate codebase
+        - Trained a classifier on the aforementioned features to incorporate query-dependency into spam classification
+    - name: RetailMeNot Inc.
+      role: Software Engineering Intern
+      start: June 2013
+      end: August 2013
+      location: Austin, TX
+      description:
+        - Resolved several bugs with their code base and added different small functionalities
+        - Created a web scraper bookmarklet in JavaScript to grab specific product information irrelevant of domain
+        - Integrated that information with the existing site to both cement and expand their business model
+        - Created a job that can be run continuously to update that product information
