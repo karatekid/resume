@@ -85,7 +85,7 @@
 {% for item in education %}
 \subsection{ {{item.school}} }
 \descript{ {{item.degree}} }
-\location{ {{item.start}} - {{item.end}} | {{item.location}} \\ {{item.gpa}} }
+\location{ {{item.start}} - {{item.end}} \\ {{item.location}} | GPA: {{item.gpa}} }
 \sectionsep
 {% endfor %}
 
@@ -121,6 +121,45 @@ Advanced Compilers \\
 Autonomous Robotics \\
 Computer Architecture \\
 % Computer Security \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+% \subsection{Undergraduate}
+RC Car Embedded System \\
+N-Way Superscalar OO Processor
+
+\iffalse
+\runsubsection{RC Car Embedded System}
+\descript{| Undergraduate Project}
+\location{Fall 2013 | Ann Arbor, MI}
+\begin{tightemize}
+\item Designed an embedded system utilizing a SOC to control a set of 4 RC cars
+\item Mesh network to allow for inter-communication between all 4 cars
+\item Use of IR to send directed information at other cars
+\item Integration with popular Gamecube controller interface
+\end{tightemize}
+\sectionsep
+
+\runsubsection{N-Way Superscalar OO Processor}
+\descript{| Undergraduate Project}
+\location{Winter 2014 | Ann Arbor, MI}
+\begin{tightemize}
+
+\item Created an out of order processor in System Verilog which was able to
+attain a 12 ns clock period when operating at 3-ways, and executed 1.11
+instructions per clock cycle on a specific test-bench
+\item Used non-obvious optimizations to improve performance, such as a
+heterogeneous cache size
+
+\item Gained in-depth understanding of processor design and testing
+\item Gained the best project grade in the class
+
+\end{tightemize}
+\fi
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -170,76 +209,6 @@ Python \textbullet{} Puppet \textbullet{} JavaScript/React \textbullet{} C
 
 {% endfor %}
 
-\runsubsection{RetailMeNot Inc.}
-\descript{| Software Engineering Intern }
-\location{June 2013 – Aug 2013 | Austin, TX}
-\begin{tightemize}
-\item Resolved several bugs with their code base and added different small
-functionalities
-\item Created a web scraper bookmarklet in JavaScript to grab specific product
-information irrelevant of domain
-\item Integrated that information with the existing site to both cement and
-expand their business model
-\item Created a job that can be run continuously to update that product
-information
-\end{tightemize}
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     RESEARCH
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Projects}
-\runsubsection{RC Car Embedded System}
-\descript{| Undergraduate Project}
-\location{Fall 2013 | Ann Arbor, MI}
-\begin{tightemize}
-\item Designed an embedded system utilizing a SOC to control a set of 4 RC cars
-\item Mesh network to allow for inter-communication between all 4 cars
-\item Use of IR to send directed information at other cars
-\item Integration with popular Gamecube controller interface
-\end{tightemize}
-\sectionsep
-
-\runsubsection{N-Way Superscalar Out of Order Processor}
-\descript{| Undergraduate Project}
-\location{Winter 2014 | Ann Arbor, MI}
-\iffalse
-\begin{tightemize}
-
-\item Created an out of order processor in System Verilog which was able to
-attain a 12 ns clock period when operating at 3-ways, and executed 1.11
-instructions per clock cycle on a specific test-bench
-\item Used non-obvious optimizations to improve performance, such as a
-heterogeneous cache size
-
-\item Gained in-depth understanding of processor design and testing
-\item Gained the best project grade in the class
-
-\end{tightemize}
-\fi
-\sectionsep
-
-\iffalse
-\runsubsection{Cornell Robot Learning Lab}
-\descript{| Head Undergrad Research}
-\location{Jan 2014 – Present | Ithaca, NY}
-Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and
-\textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to
-create \textbf{PlanIt}, a tool which  learns from large scale user preference
-feedback to plan robot trajectories in human environments.  Publication
-submitted.
-\sectionsep
-
-\runsubsection{Cornell Phonetics Lab}
-\descript{| Head Undergraduate Researcher}
-\location{Mar 2012 – May 2013 | Ithaca, NY}
-Lead the development of \textbf{QuickTongue}, the first ever breakthrough
-tongue-controlled game with
-\textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid
-in Linguistics research. Publication submitted.
-\sectionsep
-\fi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     AWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -17,22 +17,33 @@ education:
       #       end: May, 2011
       #       gpa: 4.17 / 4.3
       #       rank: 2 / 117
-
-projects:
-    - name: Example
 experience:
     - name: Counsyl Inc.
-      role: Automation Engineer
+      role: Software Engineer - Automation Team
       start: August 2015
       end: Present Day
       location: S. San Francisco, CA
       description:
-        - Run a highly decoupled micro-service based architecture to coordinate an automated lab
-        - Optimize scheduling algorithms to improve the run time of biological processes
-        - Work with several interdisciplinary teams to utilize our automation stack to create new protocols 
-        - Integrate various biological instruments into our automated work-cell
-        - Guide team to improve overall architecture and workflow
-        - Utilize platform tools to enhance our development and deployment protocols with Puppet
+        - Development and maintenance of micro-service based architecture consisting of >250 separate services with the use of fabric, puppet, debian packacking, and gocd pipelines. This architecture runs a production biology lab that processes more than XXX samples a day. Most human-accessible interfaces are Django applications.
+        - Create drivers around several third-party instruments to provide a layer of abstraction from the various vendor specific implementations. Devices include centrifuge loaders, liquid handlers, and thermal cyclers.
+        - Work with R\&D scientists and CLIA personnel to utilize our automation stack to create new assays and optimize existing ones. For example, parallelizing our dna extraction process allows the lab to process at least 30% more samples a day.
+        - Oversaw and assisted with a long-term migration project from an outdated architecture to a new one.
+          # - Preamp 1.6
+        - Provide modular UIs to lab scientists with the use of React components.
+        - Guide software team to improve overall architecture and workflow by instituting a regular architecture meeting to discuss new ideas.
+          # - PR protocol
+          # - API usage and client separation
+          # - React tooling with create-react-app
+          # - Python packaging with Pipenv
+          # - Recipe Server
+        - Created several solutions to standardize our tooling, such as pymake, a self-bootstrapping Makefile configuration tool.
+        - Improve reliability of infrastructure by adding essential unit and integration tests as well as constantly improving the existing services.
+          # - Optimize scheduling algorithms to improve the run time of biological processes
+          # - Tooling
+          #   - github_manage
+          #   - testing_ground
+          #   - counting_sheep
+          #   - pymake & pipenv
     - name: Microsoft
       role: Software Engineering Intern
       start: June 2014
