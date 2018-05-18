@@ -24,21 +24,37 @@ experience:
       end: Present Day
       location: S. San Francisco, CA
       description:
-        - Development and maintenance of micro-service based architecture consisting of >250 separate services with the use of fabric, puppet, debian packacking, and gocd pipelines. This architecture runs a production biology lab that processes more than XXX samples a day. Most human-accessible interfaces are Django applications.
-        - Create drivers around several third-party instruments to provide a layer of abstraction from the various vendor specific implementations. Devices include centrifuge loaders, liquid handlers, and thermal cyclers.
-        - Work with R\&D scientists and CLIA personnel to utilize our automation stack to create new assays and optimize existing ones. For example, parallelizing our dna extraction process allows the lab to process at least 30% more samples a day.
-        - Oversaw and assisted with a long-term migration project from an outdated architecture to a new one.
+        - Development and maintenance of micro-service based architecture
+          consisting of >250 separate python services.
+        - Utilize this architecture to support an automated sequencing lab that
+          processes more than 1,000 samples a day.
+        - Create drivers around several third-party instruments to provide a
+          layer of abstraction from the various vendor specific
+          implementations. Devices include centrifuge loaders, liquid handlers,
+          and thermal cyclers.
+        - Work with R\&D scientists and CLIA personnel to utilize our
+          automation stack to create new assays and optimize existing ones. For
+          example, parallelizing our dna extraction process allows the lab to
+          process at least 30% more samples a day.
+        - Oversaw and assisted with a long-term migration project from an
+          outdated architecture to a new one.
           # - Preamp 1.6
-        - Provide modular UIs to lab scientists with the use of React components.
-        - Guide software team to improve overall architecture and workflow by instituting a regular architecture meeting to discuss new ideas.
+        - Provide modular UIs to lab scientists with the use of React
+          components.
+        - Guide software team to improve overall architecture and workflow by
+          instituting a regular architecture meeting to discuss new ideas.
           # - PR protocol
           # - API usage and client separation
           # - React tooling with create-react-app
           # - Python packaging with Pipenv
           # - Recipe Server
-        - Created several solutions to standardize our tooling, such as pymake, a self-bootstrapping Makefile configuration tool.
-        - Improve reliability of infrastructure by adding essential unit and integration tests as well as constantly improving the existing services.
-          # - Optimize scheduling algorithms to improve the run time of biological processes
+        - Created several solutions to standardize our tooling, such as pymake,
+          a self-bootstrapping Makefile configuration tool.
+        - Improve reliability of infrastructure by adding essential unit and
+          integration tests as well as constantly improving the existing
+          services.
+          # - Optimize scheduling algorithms to improve the run time of
+          #   biological processes
           # - Tooling
           #   - github_manage
           #   - testing_ground
@@ -50,16 +66,75 @@ experience:
       end: August 2014
       location: Bellevue, WA
       description:
-        - Created a list of web-spam judgments from a set of query-url pairs, resulting in approximately 32,000 judgments
-        - Accumulated an extensive feature set from a list of query-url pairs, utilizing existing resources that were part of an elaborate codebase
-        - Trained a classifier on the aforementioned features to incorporate query-dependency into spam classification
+              # - Created a list of web-spam judgments from a set of query-url
+              # pairs, resulting in approximately 32,000 judgments
+              # - Accumulated an extensive feature set from a list of query-url
+              # pairs, utilizing existing resources that were part of an
+              # elaborate codebase
+        - Trained a classifier on features generated from a database of
+          query-url pairs to incorporate query-dependency into spam
+          classification.
     - name: RetailMeNot Inc.
       role: Software Engineering Intern
       start: June 2013
       end: August 2013
       location: Austin, TX
       description:
-        - Resolved several bugs with their code base and added different small functionalities
-        - Created a web scraper bookmarklet in JavaScript to grab specific product information irrelevant of domain
-        - Integrated that information with the existing site to both cement and expand their business model
-        - Created a job that can be run continuously to update that product information
+          # - Resolved several bugs with their code base and added different
+          # small functionalities
+        - Created a web scraper bookmarklet in JavaScript to grab specific
+          product information irrelevant of domain
+        - Integrated that information with the existing site to both cement and
+          expand their business model
+          # - Created a job that can be run continuously to update that product
+          # information
+projects:
+    - RC Car Embedded System
+      # \descript{| Undergraduate Project}
+      # \location{Fall 2013 | Ann Arbor, MI}
+      # \begin{tightemize}
+      # \item Designed an embedded system utilizing a SOC to control a set of 4 RC cars
+      # \item Mesh network to allow for inter-communication between all 4 cars
+      # \item Use of IR to send directed information at other cars
+      # \item Integration with popular Gamecube controller interface
+      # \end{tightemize}
+    - N-Way Superscalar OO Processor
+      # \descript{| Undergraduate Project}
+      # \location{Winter 2014 | Ann Arbor, MI}
+      # \begin{tightemize}
+      # \item Created an out of order processor in System Verilog which was able to
+      # attain a 12 ns clock period when operating at 3-ways, and executed 1.11
+      # instructions per clock cycle on a specific test-bench
+      # \item Used non-obvious optimizations to improve performance, such as a
+      # heterogeneous cache size
+      # \item Gained in-depth understanding of processor design and testing
+      # \item Gained the best project grade in the class
+    - Sous Vide Cooker
+awards:
+      # - 2014    & Summa Cum Laude & Graduation from University of Michigan
+      # - 2012    & 7th at site, 37th overall & ACM Regionals Competition at GVSU
+    - 2013, 2014  & EECS Scholar      & from University of Michigan
+    - 2013, 2014  & James B. Angell Scholar   & from University of Michigan
+    - 2012, 2013, 2014    & Dean's List       & from University of Michigan
+
+skills:
+    Technologies:
+        - Microservice Architecture
+        - Django Apps
+        - Robotics
+        - Algorithm Design
+        - Computer Vision
+        - Embedded System Architecture
+        - HDL Design
+        - Communication Protocol Development
+        - PCB Schematic Design
+    Languages:
+        - Python
+        - Puppet
+        - JavaScript/React
+        - C/C++
+        - Verilog
+interests:
+    - Hockey
+    - Motorcycling
+    - Hiking

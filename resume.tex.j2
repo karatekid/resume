@@ -65,7 +65,7 @@
 
 
 \namesection{Michael}{Christen}{
-\urlstyle{same}\url{http://michael-christen.github.io} \\
+% \urlstyle{same}\url{http://michael-christen.github.io} \\
 \href{mailto:mchristen96@gmail.com}{mchristen96@gmail.com} | 248.318.1624
 }
 
@@ -129,37 +129,7 @@ Computer Architecture \\
 
 \section{Projects}
 % \subsection{Undergraduate}
-RC Car Embedded System \\
-N-Way Superscalar OO Processor
-
-\iffalse
-\runsubsection{RC Car Embedded System}
-\descript{| Undergraduate Project}
-\location{Fall 2013 | Ann Arbor, MI}
-\begin{tightemize}
-\item Designed an embedded system utilizing a SOC to control a set of 4 RC cars
-\item Mesh network to allow for inter-communication between all 4 cars
-\item Use of IR to send directed information at other cars
-\item Integration with popular Gamecube controller interface
-\end{tightemize}
-\sectionsep
-
-\runsubsection{N-Way Superscalar OO Processor}
-\descript{| Undergraduate Project}
-\location{Winter 2014 | Ann Arbor, MI}
-\begin{tightemize}
-
-\item Created an out of order processor in System Verilog which was able to
-attain a 12 ns clock period when operating at 3-ways, and executed 1.11
-instructions per clock cycle on a specific test-bench
-\item Used non-obvious optimizations to improve performance, such as a
-heterogeneous cache size
-
-\item Gained in-depth understanding of processor design and testing
-\item Gained the best project grade in the class
-
-\end{tightemize}
-\fi
+{{ projects | join(' \\\\') }}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -167,16 +137,18 @@ heterogeneous cache size
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Skills}
-\subsection{Programming}
-\location{Skills:}
-Micro-service Architecture \textbullet{} Robotics \textbullet{} Algorithm
-Design  \textbullet{} Computer Vision \textbullet{} Embedded System
-Architecture \textbullet{} HDL Design \textbullet{} Communication Protocol
-Development \textbullet{} PCB Schematic Design \\ 
-\location{Languages:}
-Python \textbullet{} Puppet \textbullet{} JavaScript/React \textbullet{} C
-\textbullet{} C++ \textbullet{} Verilog \\
+{%- for skill_subset, skill_list in skills.items() %}
+\subsection{ {{skill_subset }} }
+{{ skill_list | join(' \\textbullet{} ') }}
+{% endfor -%}
 \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     INTERESTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Interests}
+{{ interests | join(' \\textbullet{} ') }}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -215,11 +187,7 @@ Python \textbullet{} Puppet \textbullet{} JavaScript/React \textbullet{} C
 
 \section{Awards} 
 \begin{tabular}{rll}
-2014    & Summa Cum Laude & Graduation from University of Michigan\\
-2012    & 7th at site, 37th overall & ACM Regionals Competition at GVSU \\
-2013, 2014  & EECS Scholar      & from University of Michigan \\
-2013, 2014  & James B. Angell Scholar   & from University of Michigan \\
-2012, 2013, 2014    & Dean's List       & from University of Michigan \\
+{{ awards | join(' \\\\\n') }}
 \end{tabular}
 \sectionsep
 
