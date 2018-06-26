@@ -24,18 +24,18 @@ experience:
       end: Present Day
       location: S. San Francisco, CA
       description:
-        - Development and maintenance of micro-service based architecture
-          consisting of >250 separate python services.
-        - Utilize this architecture to support an automated sequencing lab that
-          processes more than 1,000 samples a day.
+        - Develop and maintain a microservice based architecture consisting of
+          >250 separate python services.
+        - Utilize this architecture to support an automated genetic sequencing
+          lab that processes more than 1,000 samples a day.
         - Create drivers around several third-party instruments to provide a
           layer of abstraction from the various vendor specific
           implementations. Devices include centrifuge loaders, liquid handlers,
-          and thermal cyclers.
+          Stäubli robot arms, and thermal cyclers.
         - Work with R\&D scientists and CLIA personnel to utilize our
           automation stack to create new assays and optimize existing ones. For
           example, parallelizing our dna extraction process allows the lab to
-          process at least 30% more samples a day.
+          process at least 30\% more samples a day.
         - Oversaw and assisted with a long-term migration project from an
           outdated architecture to a new one.
           # - Preamp 1.6
@@ -137,4 +137,7 @@ skills:
 interests:
     - Hockey
     - Motorcycling
+    - Reading
+    - Cooking
+    - Tinkering
     - Hiking
