@@ -67,6 +67,7 @@
 \namesection{Michael}{Christen}{
 % \urlstyle{same}\url{http://michael-christen.github.io} \\
 \href{mailto:mchristen96@gmail.com}{mchristen96@gmail.com} | 248.318.1624
+\medskip
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -106,7 +107,7 @@ LinkedIn://
 %     COURSEWORK
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Relevant Coursework}
+\section{Coursework}
 \subsection{Graduate}
 Advanced Embedded Systems \\
 Advanced Operating Systems \\
@@ -121,15 +122,6 @@ Advanced Compilers \\
 Autonomous Robotics \\
 Computer Architecture \\
 % Computer Security \\
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Projects
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Projects}
-% \subsection{Undergraduate}
-{{ projects | join(' \\\\') }}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -149,6 +141,25 @@ Computer Architecture \\
 
 \section{Interests}
 {{ interests | join(' \\textbullet{} ') }}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Societies}
+
+Eta Kappa Nu Electrical and Computer Engineering Honor Society
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards}
+{{ awards | join(' \\\\') }}
+\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -171,7 +182,9 @@ Computer Architecture \\
 \runsubsection{ {{exp.name}} }
 \descript{| {{exp.role}} }
 \location{ {{exp.start}} - {{exp.end}} | {{exp.location}} }
+{%- if loop.first %}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
+{%- endif %}
 \begin{tightemize}
 {%- for line in exp.description %}
 \item {{ line }}
@@ -182,26 +195,25 @@ Computer Architecture \\
 {% endfor %}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS
+%     Projects
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Awards} 
-\begin{tabular}{rll}
-{{ awards | join(' \\\\\n') }}
-\end{tabular}
+\section{Projects}
+% \subsection{Undergraduate}
+{% for project in projects %}
+\runsubsection{ {{ project.name }} }
+\location{ }
+
+{%- if project.description %}
+\begin{tightemize}
+{%- for desc in project.description %}
+\item {{ desc }}
+{%- endfor %}
+\end{tightemize}
+{% endif %}
 \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SOCIETIES
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{% endfor %}
 
-\section{Societies} 
-
-\begin{tabular}{rll}
-2014    & National    & Eta Kappa Nu Electrical and Computer Engineering Honor
-Society \\
-\end{tabular}
-\sectionsep
-
-\end{minipage} 
+\end{minipage}
 \end{document}  \documentclass[]{article}
