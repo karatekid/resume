@@ -66,8 +66,10 @@ experience:
       location: Bellevue, WA
       description:
         - Trained a classifier on features generated from a database of
-          query-url pairs to incorporate query-dependency into spam
+          query-url pairs to incorporate query-dependency into web spam
           classification.
+        - Investigated the integration of this classifier with Bing's
+          overarching web spam classification and ranking systems.
               # - Created a list of web-spam judgments from a set of query-url
               # pairs, resulting in approximately 32,000 judgments
               # - Accumulated an extensive feature set from a list of query-url
