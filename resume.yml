@@ -90,18 +90,17 @@ experience:
           # - Created a job that can be run continuously to update that product
           # information
 projects:
-    - name: RC Car Embedded System
+    - name: Self Balancing Robot
       description:
-        - Inter-communication with Zigbee mesh network and directional IR system.
-        - Integration with Gamecube controllers.
-      # \descript{| Undergraduate Project}
-      # \location{Fall 2013 | Ann Arbor, MI}
-      # \begin{tightemize}
-      # \item Designed an embedded system utilizing a SOC to control a set of 4 RC cars
-      # \item Mesh network to allow for inter-communication between all 4 cars
-      # \item Use of IR to send directed information at other cars
-      # \item Integration with popular Gamecube controller interface
-      # \end{tightemize}
+        - 2 direct drive stepper motors with speed controlled by a PID loop.
+        - Running on a STM32F0 using a MPU9250 IMU to maintain a set pitch.
+    - name: Skeletal Pose Estimation from Depth Images
+      description:
+        - Retrieve depth video from a Microsoft Kinect.
+        - Utilize a distance transform to determine central regions.
+    # - name: Sous Vide Cooker
+    #   description:
+    #     - Simple temperature control of a water bath for precision cooking.
     - name: N-Way Superscalar OO Processor
       description:
         - Out of order processor in System Verilog with 12 ns clock period at
@@ -117,13 +116,18 @@ projects:
       # heterogeneous cache size
       # \item Gained in-depth understanding of processor design and testing
       # \item Gained the best project grade in the class
-    - name: Skeletal Pose Estimation from Depth Images
+    - name: RC Car Embedded System
       description:
-        - Retrieve depth video from a Microsoft Kinect.
-        - Utilize a distance transform to determine central regions.
-    - name: Sous Vide Cooker
-      description:
-        - Simple temperature control of a water bath for precision cooking.
+        - Inter-communication with Zigbee mesh network and directional IR system.
+        - Integration with Gamecube controllers.
+      # \descript{| Undergraduate Project}
+      # \location{Fall 2013 | Ann Arbor, MI}
+      # \begin{tightemize}
+      # \item Designed an embedded system utilizing a SOC to control a set of 4 RC cars
+      # \item Mesh network to allow for inter-communication between all 4 cars
+      # \item Use of IR to send directed information at other cars
+      # \item Integration with popular Gamecube controller interface
+      # \end{tightemize}
 awards:
     - EECS Scholar
       # & from University of Michigan & 2013, 2014
