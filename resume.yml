@@ -128,6 +128,19 @@ projects:
       # \item Use of IR to send directed information at other cars
       # \item Integration with popular Gamecube controller interface
       # \end{tightemize}
+      # - name: Shack (2008)
+      # - description:
+      # -   - Built a 12 x 12 shack
+      # -   - Learned about construction and woodwork
+      # - name: OCCRA & FIRST Robotics (2009-2011)
+      # - description:
+      # -   - Built various robots
+      # - name: Maddux Traffic Light (2012)
+      # - name: Mario Kart (2013)
+      # - name: App-Based Quadcopter
+      # - name: Analog Discovery Reader
+      # - name: Sous Vide Cooker
+
 awards:
     - EECS Scholar
       # & from University of Michigan & 2013, 2014
